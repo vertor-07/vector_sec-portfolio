@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Vector_Sec — Faris</title>
+
+  <!-- Fonts: Playfair Display (headings) + Inter (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-logo">V</div>
+      <div class="brand-text">
+        <div class="name">vector_sec</div>
+        <div class="role">Faris — Cybersec</div>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="#home" class="nav-item active">Home</a>
+      <a href="#projects" class="nav-item">Projects</a>
+      <a href="#skills" class="nav-item">Skills</a>
+      <a href="#blog" class="nav-item">Blog</a>
+      <a href="#contact" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <a href="#" class="icon">GH</a>
+      <a href="#" class="icon">LI</a>
+      <a href="#" class="icon">TW</a>
+    </div>
+  </aside>
+
+  <main class="main-area">
+    <header class="topbar">
+      <button class="menu-btn" aria-label="menu">☰</button>
+      <div class="top-actions">
+        <a class="btn-outline" href="#contact">Hire / Intern</a>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-left">
+        <h1 class="hero-title">Welcome.</h1>
+        <p class="hero-sub">I'm Faris — junior cybersecurity engineer & Python dev. I build tooling for SOC automation, proactive reconnaissance, and easy-to-run security workflows.</p>
+
+        <div class="hero-cta">
+          <a class="cta-primary" href="#projects">View Projects</a>
+          <a class="cta-ghost" href="#skills">My Skills</a>
+        </div>
+
+        <div class="meta-grid">
+          <div class="meta">
+            <div class="meta-num">12+</div>
+            <div class="meta-label">Repos</div>
+          </div>
+          <div class="meta">
+            <div class="meta-num">TryHackMe</div>
+            <div class="meta-label">Rooms</div>
+          </div>
+          <div class="meta">
+            <div class="meta-num">Open</div>
+            <div class="meta-label">To Freelance</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="split-bg">
+          <div class="split-left"></div>
+          <div class="split-right"></div>
+        </div>
+
+        <div class="portrait-card">
+          <img src="profile.jpg" alt="Faris portrait" class="portrait"/>
+          <div class="portrait-info">
+            <div class="p-name">Faris Razak</div>
+            <div class="p-role">Cybersecurity • Automation</div>
+            <a class="curved-btn" href="#contact">Contact me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <h2>Selected projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>SOC Automation Runner</h3>
+          <p>Python service that enriches IOCs and pushes normalized alerts to Elastic + Kibana dashboards.</p>
+          <a class="link" href="#">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Attack Surface Inventory</h3>
+          <p>OSINT tool to enumerate subdomains, certs and exposed services; exports to CSV for triage.</p>
+          <a class="link" href="#">View on GitHub →</a>
+        </article>
+
+        <article class="card">
+          <h3>Web App Vulnerability Scanner</h3>
+          <p>Lightweight scanner for XSS/SQLi detection with JSON reporting and remediation checklist.</p>
+          <a class="link" href="#">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      © <span id="year"></span> Faris — vector_sec
+    </footer>
+  </main>
+
+<script>
+  // small script for year
+  document.getElementById('year').innerText = new Date().getFullYear();
+</script>
+</body>
+</html>
